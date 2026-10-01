@@ -1,0 +1,242 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+}
+
+
+.logo {
+    font-size: 24px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin-left: 25px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    color: #ff7a00;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.hero img {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 40px;
+}
+
+
+.hero h3 {
+    color: #ff7a00;
+
+    margin: 10px 0;
+}
+
+
+.hero p {
+    max-width: 600px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+
+.btn {
+    background-color: #111;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+}
+
+
+.btn:hover {
+    background-color: #ff7a00;
+}
+
+
+/* Sections */
+
+section {
+    padding: 60px 10%;
+}
+
+
+section h2 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+/* About */
+
+#about {
+    background-color: white;
+}
+
+
+#about p {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.skill {
+    background-color: white;
+
+    padding: 20px 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: white;
+
+    text-align: center;
+}
+
+
+#contact p {
+    margin: 10px 0;
+}
+
+
+#contact a {
+    color: #ff7a00;
+
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+}
