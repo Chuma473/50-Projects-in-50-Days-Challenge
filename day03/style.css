@@ -1,0 +1,41 @@
+body {
+    background-color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #141414;
+}
+.subtitle {
+    text-align: center;
+    color: #141414;
+    margin-bottom: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #141414;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
