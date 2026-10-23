@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    width: 380px;
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #222;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.currencies {
+    display: flex;
+    gap: 12px;
+}
+
+.currencies div {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #176b4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #10533b;
+}
+
+h2 {
+    text-align: center;
+    font-size: 21px;
+    overflow-wrap: anywhere;
+}
+
+#rate, #message {
+    text-align: center;
+    font-size: 14px;
+}
+
+#message {
+    color: #c0392b;
+}
