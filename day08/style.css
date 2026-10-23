@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-button {
+    border: 1px solid white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 8%;
+    background-color: #f4f4f4;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tagline {
+    color: #e63946;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.product {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.product h2,
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+}
+
+.product-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.price {
+    color: #e63946;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+.button:hover {
+    background-color: #e63946;
+}
+
+.about {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
