@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.total-box {
+    background: #d9fbe5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.total-box h2 {
+    color: #16803c;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #16803c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #10632d;
+}
+
+#expenseList {
+    padding: 0;
+    list-style: none;
+}
+
+#expenseList li {
+    background: #f5f5f5;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.delete-btn {
+    background: #e53935;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
+#message {
+    text-align: center;
+    color: #d32f2f;
+}
