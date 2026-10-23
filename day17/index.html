@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Image Gallery 🖼️</h1>
+    <p class="subtitle">A collection of beautiful pictures</p>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1015/400/300"
+                 alt="Mountain and river" onclick="openImage(this)">
+            <p>Nature</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1011/400/300"
+                 alt="Beautiful landscape" onclick="openImage(this)">
+            <p>Landscape</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1018/400/300"
+                 alt="Mountain scenery" onclick="openImage(this)">
+            <p>Mountains</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1025/400/300"
+                 alt="Dog portrait" onclick="openImage(this)">
+            <p>Animals</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1039/400/300"
+                 alt="Coastal scenery" onclick="openImage(this)">
+            <p>Adventure</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/id/1043/400/300"
+                 alt="Outdoor scenery" onclick="openImage(this)">
+            <p>Outdoors</p>
+        </div>
+
+    </div>
+
+    <div id="lightbox" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="largeImage" alt="Enlarged gallery image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
