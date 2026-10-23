@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 350px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #111;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#password {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#length {
+    width: 60px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.options {
+    margin: 15px 0;
+}
+
+.options label {
+    display: block;
+    margin: 12px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #2878d0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #15549b;
+}
+
+.copy-btn {
+    background: #16803c;
+}
+
+.copy-btn:hover {
+    background: #10632d;
+}
+
+#message {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
