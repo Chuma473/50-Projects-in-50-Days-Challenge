@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        #display {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-align: right;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" value="0" readonly>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="chooseOperator('/')">÷</button>
+            <button onclick="chooseOperator('*')">×</button>
+            <button onclick="chooseOperator('-')">−</button>
+
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="chooseOperator('+')">+</button>
+
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('.')">.</button>
+
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="calculate()">=</button>
+
+            <button onclick="press('0')">0</button>
+        </div>
+    </div>
+
+    <script>
+        let firstNumber = null;
+        let operator = null;
+        let newNumber = true;
+
+        function press(value) {
+            let display = document.getElementById("display");
+
+            if (newNumber) {
+                display.value = value === "." ? "0." : value;
+                newNumber = false;
+            } else if (value !== "." || !display.value.includes(".")) {
+                display.value += value;
+            }
+        }
+
+        function chooseOperator(op) {
+            let display = document.getElementById("display");
+
+            if (operator !== null && !newNumber) {
+                calculate();
+            }
+
+            firstNumber = Number(display.value);
+            operator = op;
+            newNumber = true;
+        }
+
+        function calculate() {
+            let display = document.getElementById("display");
+            let secondNumber = Number(display.value);
+            let result;
+
+            if (operator === null) return;
+
+            if (operator === "+") {
+                result = firstNumber + secondNumber;
+            } else if (operator === "-") {
+                result = firstNumber - secondNumber;
+            } else if (operator === "*") {
+                result = firstNumber * secondNumber;
+            } else if (operator === "/") {
+                result = secondNumber === 0
+                    ? "Cannot divide by zero"
+                    : firstNumber / secondNumber;
+            }
+
+            display.value = result;
+            firstNumber = null;
+            operator = null;
+            newNumber = true;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "0";
+            firstNumber = null;
+            operator = null;
+            newNumber = true;
+        }
+    </script>
+
+</body>
+</html>
